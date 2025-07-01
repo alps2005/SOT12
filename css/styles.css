@@ -1,5 +1,6 @@
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 115, 255);
+    padding-top: 200px; /* Add space for fixed navigation */
 }
 
 .title {
@@ -9,13 +10,25 @@ body {
 }
 
 .subtitle {
-    font-family: "JetBrains Mono", monospace;
+    font-family: "Spectral", monospace;
     font-weight: bold;
     font-size: 30px;
+}
+
+.subtitle-2 {
+    font-family: "Spectral", monospace;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .form-label {
     font-family: "JetBrains Mono", monospace;
     font-weight: light;
+    font-size: 15px;
+}
+
+.nav-text {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: bold;
     font-size: 15px;
 }
