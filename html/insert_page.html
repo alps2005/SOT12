@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
+    <!-- Navbar -->
     <div class="fixed-top shadow p-3 bg-white rounded">
       <h1 class="text-center title mb-4">Empresa importante</h1>
         <ul class="nav nav-pills nav-fill nav-text">
@@ -34,91 +35,93 @@
             </li>
           </ul>
     </div>
-    
-    <div class="container bg-white rounded p-4 shadow mb-5"> <!-- Main container -->
+    <!-- Main container -->
+    <div class="container bg-white rounded p-4 shadow mb-5">
       <h2 class="align-left subtitle mb-4">Ingrese los siguientes datos</h2>
-      <div class="container border border-primary rounded p-4"> <!-- Personal data container -->
+      <!-- Personal data container -->
+      <div class="container border border-primary rounded p-4"> 
         <h3 class="align-left subtitle-2 mb-4">Datos personales</h3>
           <form class="row g-3">
             <div class="col-md-12">
               <label for="inputName" class="form-label">Nombre completo</label>
-              <input type="text" class="form-control" id="inputName"/>
+              <input type="text" class="form-control" id="inputName"/> <!-- Name input -->
             </div>
             <div class="col-md-6">
               <label for="inputEmail" class="form-label">Email</label>
-              <input type="email" class="form-control" id="inputEmail"/>
+              <input type="email" class="form-control" id="inputEmail"/> <!-- Email input -->
             </div>
             <div class="col-md-6">
               <label for="inputPhone" class="form-label">Telefono</label>
-              <input type="tel" class="form-control" id="inputPhone"/>
+              <input type="tel" class="form-control" id="inputPhone"/> <!-- Phone input -->
             </div>
             <div class="col-md-6">
               <label for="inputAddress" class="form-label">Direccion</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="Calle x ..."/>
+              <input type="text" class="form-control" id="inputAddress" placeholder="Calle x ..."/> <!-- Address input -->
             </div>
             <div class="col-md-4">
               <label for="inputState" class="form-label">Provincia</label>
-              <select id="inputState" class="form-select"></select>
+              <select id="inputState" class="form-select"></select> <!-- Province input -->
             </div>
             <div class="col-md-2">
               <label for="inputZip" class="form-label">Zip</label>
-              <input type="text" class="form-control" id="inputZip" />
+              <input type="text" class="form-control" id="inputZip" /> <!-- Zip input -->
             </div>
           </form>
       </div>
-    <div class="container border border-primary rounded p-4 mt-3"> <!-- Academic data container -->
+      <!-- Academic data container -->
+    <div class="container border border-primary rounded p-4 mt-3"> 
       <h3 class="align-left subtitle-2 mb-4">Informacion academica</h3>
         <form class="row g-3">
           <div class="col-md-4">
             <label for="inputPSchool" class="form-label">Escuela Primaria</label>
-            <input type="text" class="form-control" id="inputPSchool">
+            <input type="text" class="form-control" id="inputPSchool"> <!-- Primary school input -->
           </div>
           <div class="col-md-4">
             <label for="inputHSchool" class="form-label">Colegio</label>
-            <input type="text" class="form-control" id="inputHSchool">
+            <input type="text" class="form-control" id="inputHSchool"> <!-- High school input -->
           </div>
           <div class="col-md-4">
             <label for="inputCollege" class="form-label">Universidad</label>
-            <input type="text" class="form-control" id="inputCollege">
+            <input type="text" class="form-control" id="inputCollege"> <!-- College input -->
           </div>
         </form>
       </div>
-      <div class="container border border-primary rounded p-4 mt-3"> <!-- Job data container -->
+      <!-- Job data container -->
+      <div class="container border border-primary rounded p-4 mt-3"> 
         <h3 class="align-left subtitle-2 mb-4">Informacion profesional</h3>
         <form class="row g-3">
           <div class="col-md-4">
-            <label for="inputJob" class="form-label">Titulo</label>
-            <input type="text" class="form-control" id="inputJob">
+            <label for="inputDegreeTitle" class="form-label">Titulo</label>
+            <input type="text" class="form-control" id="inputDegreeTitle"> <!-- Degree title input -->
           </div>
           <div class="col-md-4">
             <label for="inputJobPosition" class="form-label">Puesto laboral</label>
-            <input type="text" class="form-control" id="inputJobPosition">
+            <input type="text" class="form-control" id="inputJobPosition"> <!-- Job position input -->
           </div>
           <div class="col-md-4">
-            <label for="inputTWorked" class="form-label">Experiencia laboral(años)</label>
-            <input type="number" class="form-control" id="inputTWorked">
+            <label for="inputExperience" class="form-label">Experiencia laboral(años)</label>
+            <input type="number" class="form-control" id="inputExperience"> <!-- Years of experience input -->
           </div>
         </form>
       </div>
-
-      <div class="container border border-primary rounded p-4 mt-3"> <!-- family data constainer -->
+      <!-- family data constainer -->
+      <div class="container border border-primary rounded p-4 mt-3"> 
         <h3 class="align-left subtitle-2 mb-4">Detaller de informacion (familiares)</h3>
         <form class="row g-3">
           <div class="col-md-4">
-            <label for="inputMarriage" class="form-label">Conyugue (nombre)</label>
-            <input type="text" class="form-control" id="inputMarriage">
+            <label for="inputSpouse" class="form-label">Conyugue (nombre)</label>
+            <input type="text" class="form-control" id="inputSpouse"> <!-- Spouse input -->
           </div>
           <div class="col-md-4">
             <label for="inputChildrenQ" class="form-label">Hijos (cantidad)</label>
-            <input type="number" class="form-control" id="inputChildrenQ">
+            <input type="number" class="form-control" id="inputChildrenQ"> <!-- Children input -->
           </div>
         </form>
       </div>
-
-      <div class="col-12 mt-4"> <!-- Submit button -->
-        <button type="submit" class="btn btn-primary" style="font-family: 'JetBrains Mono', monospace;">Guardar</button>
+      <!-- Submit button -->
+      <div class="col-12 mt-4"> 
+        <button type="submit" class="btn btn-primary" style="font-family: 'JetBrains Mono', monospace;" id="submitButton">Guardar</button>
       </div>
-
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
