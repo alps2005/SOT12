@@ -1,29 +1,29 @@
 <?php
-// Configuración de la base de datos
+// Database configuration
 define('DB_SERVER', 'localhost');
-define('DB_USERNAME', 'root'); // Cambiar según tu configuración LEMP
-define('DB_PASSWORD', ''); // Cambiar según tu configuración LEMP
+define('DB_USERNAME', 'root'); // Change according to your LEMP configuration
+define('DB_PASSWORD', 'P2ssw0rd'); // Change according to your LEMP configuration
 define('DB_NAME', 'employees_db');
 
-// Crear conexión usando mysqli
-$mysqli = new mysqli(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
+// Create connection using mysqli
+$mysqli = new mysqli(localhost, root, P2ssw0rd, employees_db);
 
-// Verificar conexión
+// Check connection
 if ($mysqli->connect_error) {
     die("Error de conexión: " . $mysqli->connect_error);
 }
 
-// Establecer charset para caracteres especiales
+// Set charset for special characters
 $mysqli->set_charset("utf8mb4");
 
-// Función para cerrar la conexión
+// Function to close the connection
 function closeConnection($connection) {
     if ($connection) {
         $connection->close();
     }
 }
 
-// Función para limpiar datos de entrada
+// Function to clean input data
 function cleanInput($data) {
     $data = trim($data);
     $data = stripslashes($data);
