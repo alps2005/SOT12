@@ -41,13 +41,9 @@
   <!-- Main container -->
   <div class="container bg-white rounded p-4 shadow mb-5">
     <h2 class="align-left subtitle mb-4">Ingrese los siguientes datos</h2>
-    <!-- Personal data container -->
-     <!-- family data constainer -->
-    <!-- <div class="container border border-primary rounded p-4 mt-3">
-
-    </div> -->
+    <!-- Form container -->
     <div class="container border border-primary rounded p-4">
-      <form class="row g-3" action="../scripts/php/connect.php" method="post">
+      <form class="row g-3" action="../scripts/php/process_form.php" method="post"> <!-- Set the action to the process_form.php file and the method to POST -->
         <h3 class="align-left subtitle-2 mb-2">Datos personales</h3>
         <div class="col-md-12">
           <label for="inputName" class="form-label">Nombre completo</label>
@@ -111,7 +107,7 @@
         <!-- Submit button -->
         <div class="col-12 mt-4">
           <button type="submit" class="btn btn-primary" style="font-family: 'JetBrains Mono', monospace;"
-            id="submitButton">Guardar</button>
+            id="submitButton">Guardar</button> <!-- Submit button -->
         </div>
       </form>
     </div>
@@ -120,7 +116,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous">
     </script>
-  <script src="../scripts/js/form_handler.js"></script>
+  <script src="../scripts/js/form_handler.js"></script> <!-- Load the form handler script -->
 
 </body>
 
