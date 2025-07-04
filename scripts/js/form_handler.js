@@ -28,7 +28,10 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 });
 //Event listener for the submit button
-document.getElementById("submitButton").addEventListener("click", function() {
+document.getElementById("submitButton").addEventListener("click", function(event) {
+    // Prevent default form submission to validate first
+    event.preventDefault();
+    
     //Check if there are empty inputs or invalid selects
     let emptyInput = false;
     let invalidSelect = false;
@@ -46,33 +49,7 @@ document.getElementById("submitButton").addEventListener("click", function() {
         alert("Existen campos vacios o invalidos!");
         return;
     }
-    //If there is no empty stuff add them to the employees array
-    var employees = [{
-        name: document.getElementById("inputName").value,
-        email: document.getElementById("inputEmail").value,
-        phone: document.getElementById("inputPhone").value,
-        address: document.getElementById("inputAddress").value,
-        province: document.getElementById("inputState").value,
-        zipcode: document.getElementById("inputZip").value,
-        pSchool: document.getElementById("inputPSchool").value,
-        hSchool: document.getElementById("inputHSchool").value,
-        college: document.getElementById("inputCollege").value,
-        degreeTitle: document.getElementById("inputDegreeTitle").value,
-        jobPosition: document.getElementById("inputJobPosition").value,
-        experience: document.getElementById("inputExperience").value,
-        spouse: document.getElementById("inputSpouse").value,
-        childrenQ: document.getElementById("inputChildrenQ").value
-    }]
-    for (var i = 0; i < employees.length; i++){
-        console.log(employees[i]);
-    };
-    //Clear the form for each input and select
-    document.querySelectorAll('input').forEach(input => {
-        input.value = "";
-    });
-    document.querySelectorAll('select').forEach(select => {
-        select.value = "...";
-    });
-    //Alert to confirm the employee was added successfully
-    alert(`Nuevo empleado agregado: ${employees[0].name}`);
+    
+    // If validation passes, submit the form
+    document.querySelector('form').submit();
 });
