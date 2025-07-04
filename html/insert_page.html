@@ -47,73 +47,73 @@
 
     </div> -->
     <div class="container border border-primary rounded p-4">
-      <form class="row g-3">
+      <form class="row g-3" action="../scripts/php/connect.php" method="post">
         <h3 class="align-left subtitle-2 mb-2">Datos personales</h3>
         <div class="col-md-12">
           <label for="inputName" class="form-label">Nombre completo</label>
-          <input type="text" class="form-control" id="inputName" /> <!-- Name input -->
+          <input type="text" class="form-control" id="inputName" name="name"/> <!-- Name input -->
         </div>
         <div class="col-md-6">
           <label for="inputEmail" class="form-label">Email</label>
-          <input type="email" class="form-control" id="inputEmail" /> <!-- Email input -->
+          <input type="email" class="form-control" id="inputEmail" name="email"/> <!-- Email input -->
         </div>
         <div class="col-md-6">
           <label for="inputPhone" class="form-label">Telefono</label>
-          <input type="tel" class="form-control" id="inputPhone" /> <!-- Phone input -->
+          <input type="text" class="form-control" id="inputPhone" name="phone"/> <!-- Phone input -->
         </div>
         <div class="col-md-6">
           <label for="inputAddress" class="form-label">Direccion</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="Calle x ..." /> <!-- Address input -->
+          <input type="text" class="form-control" id="inputAddress" placeholder="Calle x ..." name="address"/> <!-- Address input -->
         </div>
         <div class="col-md-4">
           <label for="inputState" class="form-label">Provincia</label>
-          <select id="inputState" class="form-select"></select> <!-- State input -->
+          <select type="text" id="inputState" class="form-select" name="state"></select> <!-- State input -->
         </div>
         <div class="col-md-2 mb-4">
           <label for="inputZip" class="form-label">Zip</label>
-          <input type="text" class="form-control" id="inputZip" /> <!-- Zip input -->
+          <input type="text" class="form-control" id="inputZip" name="zip"/> <!-- Zip input -->
         </div>
         <h3 class="align-left subtitle-2 mb-2">Informacion academica</h3>
         <div class="col-md-4">
           <label for="inputPSchool" class="form-label">Escuela Primaria</label>
-          <input type="text" class="form-control" id="inputPSchool"> <!-- Primary school input -->
+          <input type="text" class="form-control" id="inputPSchool" name="pschool"> <!-- Primary school input -->
         </div>
         <div class="col-md-4">
           <label for="inputHSchool" class="form-label">Colegio</label>
-          <input type="text" class="form-control" id="inputHSchool"> <!-- High school input -->
+          <input type="text" class="form-control" id="inputHSchool" name="hschool"> <!-- High school input -->
         </div>
         <div class="col-md-4 mb-4">
           <label for="inputCollege" class="form-label">Universidad</label>
-          <input type="text" class="form-control" id="inputCollege"> <!-- College input -->
+          <input type="text" class="form-control" id="inputCollege" name="college"> <!-- College input -->
         </div>
         <h3 class="align-left subtitle-2 mb-2">Informacion profesional</h3>
         <div class="col-md-4">
           <label for="inputDegreeTitle" class="form-label">Titulo</label>
-          <input type="text" class="form-control" id="inputDegreeTitle"> <!-- Degree title input -->
+          <input type="text" class="form-control" id="inputDegreeTitle" name="degree"> <!-- Degree title input -->
         </div>
         <div class="col-md-4 mb-4">
           <label for="inputJobPosition" class="form-label">Puesto laboral</label>
-          <input type="text" class="form-control" id="inputJobPosition"> <!-- Job position input -->
+          <input type="text" class="form-control" id="inputJobPosition" name="job"> <!-- Job position input -->
         </div>
         <div class="col-md-4">
           <label for="inputExperience" class="form-label">Experiencia laboral(años)</label>
-          <input type="number" class="form-control" id="inputExperience"> <!-- Years of experience input -->
+          <input type="number" class="form-control" id="inputExperience" name="experience"> <!-- Years of experience input -->
         </div>
         <h3 class="align-left subtitle-2 mb-2">Detaller de informacion (familiares)</h3>
         <div class="col-md-4">
           <label for="inputSpouse" class="form-label">Conyugue (nombre)</label>
-          <input type="text" class="form-control" id="inputSpouse"> <!-- Spouse input -->
+          <input type="text" class="form-control" id="inputSpouse" name="spouse"> <!-- Spouse input -->
         </div>
         <div class="col-md-4">
           <label for="inputChildrenQ" class="form-label">Hijos (cantidad)</label>
-          <input type="number" class="form-control" id="inputChildrenQ"> <!-- Children input -->
+          <input type="number" class="form-control" id="inputChildrenQ" name="children"> <!-- Children input -->
+        </div>
+        <!-- Submit button -->
+        <div class="col-12 mt-4">
+          <button type="submit" class="btn btn-primary" style="font-family: 'JetBrains Mono', monospace;"
+            id="submitButton">Guardar</button>
         </div>
       </form>
-    </div>
-    <!-- Submit button -->
-    <div class="col-12 mt-4">
-      <button type="submit" class="btn btn-primary" style="font-family: 'JetBrains Mono', monospace;"
-        id="submitButton">Guardar</button>
     </div>
   </div>
 
@@ -121,6 +121,7 @@
     integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous">
     </script>
   <script src="../scripts/js/form_handler.js"></script>
+
 </body>
 
 </html>
