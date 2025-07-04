@@ -11,5 +11,5 @@ Make sure you have the following tools installed in your machine in order to mak
 1. XAMPP.
 2. PHP(Latest version if posible).
 3. VS Code, Cursor or any IDE.
-4. Make sure your **'Apache Web Server'** is running and save the project directory int the **'XAMPP/htdocs/'** path.
-5. Accese the html file in your browser with the **'http://localhost/YourDirectoryPath'** address.
+4. Make sure your **'Apache Web Server'** is running and save the project directory in the **'XAMPP/htdocs/'** path.
+5. Access the html file in your browser with the **'http://localhost/YourDirectoryPath'** address.
